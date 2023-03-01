@@ -1,0 +1,45 @@
+name: appreciation_and_thanks
+description: A new Flutter project.
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: 1.0.2
+  provider: 6.0.5
+  dartz: 0.10.1
+  get_it: 7.2.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: 2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/png/
+    - assets/jsons/badge-data.json
+    - assets/jsons/list-data.json
+
+  
+  fonts:
+    - family: Gotham
+      fonts:
+        # - asset: assets/fonts/Gotham-Black.otf
+        # - asset: assets/fonts/Gotham-Bold.otf
+        # - asset: assets/fonts/Gotham-Book.otf
+        # - asset: assets/fonts/Gotham-Light.otf
+        - asset: assets/fonts/Gotham-Medium.otf

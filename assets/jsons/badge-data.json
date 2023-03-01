@@ -1,0 +1,94 @@
+{
+    "value": [
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "69eca8ee-6e23-43d0-9024-1316ef04c273",
+            "odata.etag": "\"1\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(3)",
+            "Id": 3,
+            "Title": "Değer Katan",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_deger_katan.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_deger_katan.png\",\"id\":\"e2b52295-d408-4157-93ce-845e3da6f01f\"}",
+            "ID": 3
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "c5d1c620-71a2-4c35-9c0b-878b70fe4da4",
+            "odata.etag": "\"2\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(4)",
+            "Id": 4,
+            "Title": "Değişime Açık",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_gelisime_acik.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_gelisime_acik.png\",\"id\":\"7e480327-6e4a-4617-aa72-0e1022a16513\"}",
+            "ID": 4
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "864af599-f570-4a6e-8b8a-6ecc2f8c954c",
+            "odata.etag": "\"1\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(5)",
+            "Id": 5,
+            "Title": "İşine Hakim",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_isine_hakim.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_isine_hakim.png\",\"id\":\"e0c786f8-4c73-4374-9ef8-71d8c791676d\"}",
+            "ID": 5
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "4ee39d98-fb5b-4f2e-bfb6-8d9234955b8f",
+            "odata.etag": "\"1\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(6)",
+            "Id": 6,
+            "Title": "Lider",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_lider.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_lider.png\",\"id\":\"a9ac8297-ebd8-499b-a608-3c07b690ec82\"}",
+            "ID": 6
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "02ba38f5-093f-42d2-816e-89a91b2068ac",
+            "odata.etag": "\"2\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(7)",
+            "Id": 7,
+            "Title": "Sorun Çözen",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_soruncoz.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_soruncoz.png\",\"id\":\"207dd491-49d7-4a44-929a-09a63c228cb8\"}",
+            "ID": 7
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "6b2d2e5e-2abd-4bbd-ba6a-8f7cc35544e4",
+            "odata.etag": "\"2\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(8)",
+            "Id": 8,
+            "Title": "Takım Oyuncusu",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_takim_oyuncu.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_takim_oyuncu.png\",\"id\":\"20660e16-1482-47bb-a193-a3d8c0dc95a3\"}",
+            "ID": 8
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "3b68aff3-1b92-4607-aca1-d914ad6d6147",
+            "odata.etag": "\"3\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(9)",
+            "Id": 9,
+            "Title": "Teşekkür",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_tesekkur.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_tesekkur.png\",\"id\":\"05753144-773f-43cd-8077-8ed55450923f\"}",
+            "ID": 9
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "0ce3c61b-e7eb-4bc1-b2bd-fe0b014d32be",
+            "odata.etag": "\"2\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(10)",
+            "Id": 10,
+            "Title": "Yaratıcı",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_yaratici.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_yaratici.png\",\"id\":\"ed449f39-1b51-4485-bdd3-0b3d5c303326\"}",
+            "ID": 10
+        },
+        {
+            "odata.type": "SP.Data.PraiseBadgesListItem",
+            "odata.id": "6a196353-3a95-4873-bc18-41d639abb0f2",
+            "odata.etag": "\"2\"",
+            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(11)",
+            "Id": 11,
+            "Title": "Yenilikçi",
+            "BadgeIcon": "{\"type\":\"thumbnail\",\"fileName\":\"icon_yenilikci.png\",\"nativeFile\":{},\"fieldName\":\"BadgeIcon\",\"serverUrl\":\"https://devjunointranet.sharepoint.com\",\"serverRelativeUrl\":\"/sites/dev/Praise/SiteAssets/Lists/5f0cf965-1901-4f1d-ad7c-ddb89acfa58c/icon_yenilikci.png\",\"id\":\"71d17d09-70ab-44be-97f8-b79a0fe7318d\"}",
+            "ID": 11
+        }
+    ]
+}
