@@ -11,3 +11,8 @@ extension NumExtension on num {
 
   bool get isInt => (this % 1) == 0;
 }
+
+extension NumNullableExtension on num? {
+  bool get isNotNull => this != null;
+  num get getValueOrDefault => this ?? 0;
+}

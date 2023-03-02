@@ -1,5 +1,6 @@
 import 'package:appreciation_and_thanks/core/utils/json_manager/entity/app_endpoint.dart';
 import 'package:appreciation_and_thanks/feature/home/data/dto/badge/badge_dto.dart';
+import 'package:appreciation_and_thanks/feature/home/data/dto/post/post_dto.dart';
 import 'package:dartz/dartz.dart';
 
 import 'package:appreciation_and_thanks/core/failure/failure.dart';
@@ -29,13 +30,15 @@ class HomeService implements IHomeService {
   }
 
   @override
-  Future<Either<Failure, void>> fetchListData() async {
+  Future<Either<Failure, List<PostDto>>> fetchListData() async {
     try {
       final listEither = await _readJsonUsecase(AppEndpoint.list);
       return listEither.fold(
         (failure) => Left(failure),
         (data) {
-          return const Right(null);
+          List<PostDto> result = (data["Row"] as List).map((e) => PostDto.fromMap(e)).toList();
+
+          return Right(result);
         },
       );
     } catch (_) {

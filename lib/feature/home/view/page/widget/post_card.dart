@@ -1,11 +1,14 @@
 import 'package:appreciation_and_thanks/core/constants/theme/app_colors.dart';
 import 'package:appreciation_and_thanks/core/extensions/num_extensions.dart';
 import 'package:appreciation_and_thanks/core/functions/edge_insets_functions.dart';
+import 'package:appreciation_and_thanks/core/shared/app_image.dart';
 import 'package:appreciation_and_thanks/core/shared/app_text.dart';
+import 'package:appreciation_and_thanks/feature/home/data/dto/post/post_dto.dart';
 import 'package:flutter/material.dart';
 
 class PostCard extends StatelessWidget {
-  const PostCard({super.key});
+  const PostCard({super.key, required this.post});
+  final PostDto post;
 
   @override
   Widget build(BuildContext context) {
@@ -32,43 +35,56 @@ class PostCard extends StatelessWidget {
                 backgroundColor: AppColors.blue,
               ),
               SizedBox(width: 11.w),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  AppText.headline3("Nagihan Uslu"),
-                  AppText.headline4("Dün, 13:30’da Gönderdi"),
-                ],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AppText.headline3(
+                      post.relatedPerson.first.title,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    AppText.headline4(
+                      "Dün, 13:30’da Gönderdi",
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
           SizedBox(height: 16.h),
           Row(
             children: [
-              CircleAvatar(
-                radius: 32.r,
-                backgroundColor: AppColors.darkBlue,
-              ),
+              AppImage(post.badges.first.badgeIcon!.assetPath),
               SizedBox(width: 10.w),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  AppText.bodyLarge("Takım Oyuncusu"),
-                  SizedBox(height: 8.h),
-                  Container(
-                    height: 20.h,
-                    width: 100.w,
-                    color: AppColors.blue,
-                  ),
-                ],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AppText.bodyLarge(
+                      post.badges.first.title,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    SizedBox(height: 8.h),
+                    Container(
+                      height: 20.h,
+                      width: 100.w,
+                      color: AppColors.blue,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
           SizedBox(height: 11.h),
-          AppText.labelMedium(
-            "Gerçek bir takım arkadaşısın. Birlikte çalışmanın çok zevkliydi aynı zamanda farklı açılardan bakmama yardımcı olsun, teşekkür ederim.",
-            color: AppColors.dark,
-            maxLines: 3,
-            overflow: TextOverflow.ellipsis,
+          Align(
+            alignment: Alignment.centerLeft,
+            child: AppText.labelMedium(
+              post.message,
+              color: AppColors.dark,
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
+            ),
           )
         ],
       ),
