@@ -4,17 +4,11 @@ class BadgeDto {
   final int id;
   final String title;
   final BadgeIconDto badgeIcon;
-  final String odataId;
-  final String odataType;
-  final String odataEditLink;
 
   BadgeDto({
     required this.id,
     required this.title,
     required this.badgeIcon,
-    required this.odataId,
-    required this.odataType,
-    required this.odataEditLink,
   });
 
   factory BadgeDto.fromMap(Map<String, dynamic> map) {
@@ -22,9 +16,6 @@ class BadgeDto {
       id: map['Id'],
       title: map['Title'],
       badgeIcon: BadgeIconDto.fromMap(map['BadgeIcon']),
-      odataId: map['odata.id'],
-      odataType: map['odata.type'],
-      odataEditLink: map['odata.editLink'],
     );
   }
 }

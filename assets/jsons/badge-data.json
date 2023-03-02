@@ -5,97 +5,63 @@
             "Title": "Değer Katan",
             "BadgeIcon": {
                 "fileName":"icon_deger_katan.png"                
-            },
-            "odata.id": "69eca8ee-6e23-43d0-9024-1316ef04c273",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(3)"
+            }
         },
         {
             "Id": 4,
             "Title": "Değişime Açık",
             "BadgeIcon": {
                 "fileName":"icon_gelisime_acik.png"
-            },
-            "odata.id": "c5d1c620-71a2-4c35-9c0b-878b70fe4da4",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(4)"
+            }
         },
         {
             "Id": 5,
             "Title": "İşine Hakim",
             "BadgeIcon": {
                 "fileName":"icon_isine_hakim.png"
-            },
-            "odata.id": "864af599-f570-4a6e-8b8a-6ecc2f8c954c",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(5)"
-        
+            }
         },
         {
             "Id": 6,
             "Title": "Lider",
             "BadgeIcon": {
                 "fileName":"icon_lider.png"
-            },
-            "odata.id": "4ee39d98-fb5b-4f2e-bfb6-8d9234955b8f",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(6)"
-           
+            }
         },
         {
             "Id": 7,
             "Title": "Sorun Çözen",
             "BadgeIcon": {
                 "fileName":"icon_soruncoz.png"
-            },
-            "odata.id": "02ba38f5-093f-42d2-816e-89a91b2068ac",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(7)"
-          
+            }
         },
         {
             "Id": 8,
             "Title": "Takım Oyuncusu",
             "BadgeIcon": {
                 "fileName":"icon_takim_oyuncu.png"
-            },
-            "odata.id": "6b2d2e5e-2abd-4bbd-ba6a-8f7cc35544e4",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(8)"
-           
+            }
         },
         {
             "Id": 9,
             "Title": "Teşekkür",
             "BadgeIcon":{
                 "fileName":"icon_tesekkur.png"
-            },
-            "odata.id": "3b68aff3-1b92-4607-aca1-d914ad6d6147",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(9)"
-          
+            }
         },
         {
             "Id": 10,
             "Title": "Yaratıcı",
             "BadgeIcon": {
                 "fileName":"icon_yaratici.png"
-            },
-            "odata.id": "0ce3c61b-e7eb-4bc1-b2bd-fe0b014d32be",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(10)"
-            
+            }
         },
         {
             "Id": 11,
             "Title": "Yenilikçi",
             "BadgeIcon": {
                 "fileName":"icon_yenilikci.png"
-            },
-            "odata.id": "6a196353-3a95-4873-bc18-41d639abb0f2",
-            "odata.type": "SP.Data.PraiseBadgesListItem",
-            "odata.editLink": "Web/Lists(guid'5f0cf965-1901-4f1d-ad7c-ddb89acfa58c')/Items(11)"
-            
+            }
         }
     ]
 }
