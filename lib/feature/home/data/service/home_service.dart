@@ -1,5 +1,5 @@
 import 'package:appreciation_and_thanks/core/utils/json_manager/entity/app_endpoint.dart';
-import 'package:appreciation_and_thanks/feature/home/data/dto/badge_dto.dart';
+import 'package:appreciation_and_thanks/feature/home/data/dto/badge/badge_dto.dart';
 import 'package:dartz/dartz.dart';
 
 import 'package:appreciation_and_thanks/core/failure/failure.dart';
@@ -23,7 +23,7 @@ class HomeService implements IHomeService {
           return Right(result);
         },
       );
-    } catch (failure) {
+    } catch (_) {
       return Left(ServiceFailure());
     }
   }
@@ -35,11 +35,10 @@ class HomeService implements IHomeService {
       return listEither.fold(
         (failure) => Left(failure),
         (data) {
-          print(data);
           return const Right(null);
         },
       );
-    } catch (failure) {
+    } catch (_) {
       return Left(ServiceFailure());
     }
   }

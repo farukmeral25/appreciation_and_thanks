@@ -31,8 +31,9 @@ flutter:
 
   assets:
     - assets/images/png/
-    - assets/jsons/badge-data.json
-    - assets/jsons/list-data.json
+    - assets/images/png/icons/
+    - assets/jsons/
+    
 
   
   fonts:

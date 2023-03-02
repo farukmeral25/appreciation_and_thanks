@@ -1,6 +1,6 @@
 import 'package:appreciation_and_thanks/core/utils/ui_state.dart';
 import 'package:appreciation_and_thanks/core/utils/usecase.dart';
-import 'package:appreciation_and_thanks/feature/home/data/dto/badge_dto.dart';
+import 'package:appreciation_and_thanks/feature/home/data/dto/badge/badge_dto.dart';
 import 'package:appreciation_and_thanks/feature/home/domain/usecase/fetch_badges_usecase.dart';
 import 'package:appreciation_and_thanks/feature/home/domain/usecase/fetch_list_usecase.dart';
 import 'package:flutter/material.dart';

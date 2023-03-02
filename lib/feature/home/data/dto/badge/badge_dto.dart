@@ -1,19 +1,19 @@
-import 'dart:convert';
+import 'package:appreciation_and_thanks/feature/home/data/dto/badge/badge_icon_dto.dart';
 
 class BadgeDto {
-  final String odataId;
-  final String odataType;
-  final String odataEtag;
-  final String odataEditLink;
   final int id;
   final String title;
+  final BadgeIconDto badgeIcon;
+  final String odataId;
+  final String odataType;
+  final String odataEditLink;
 
   BadgeDto({
     required this.id,
     required this.title,
+    required this.badgeIcon,
     required this.odataId,
     required this.odataType,
-    required this.odataEtag,
     required this.odataEditLink,
   });
 
@@ -21,9 +21,9 @@ class BadgeDto {
     return BadgeDto(
       id: map['Id'],
       title: map['Title'],
+      badgeIcon: BadgeIconDto.fromMap(map['BadgeIcon']),
       odataId: map['odata.id'],
       odataType: map['odata.type'],
-      odataEtag: map['odata.etag'],
       odataEditLink: map['odata.editLink'],
     );
   }
