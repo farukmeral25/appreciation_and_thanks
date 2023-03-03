@@ -5,13 +5,11 @@ import 'package:appreciation_and_thanks/core/utils/ui_state.dart';
 import 'package:appreciation_and_thanks/core/utils/usecase.dart';
 import 'package:appreciation_and_thanks/feature/home/data/dto/badge/badge_dto.dart';
 import 'package:appreciation_and_thanks/feature/home/data/dto/post/post_dto.dart';
-import 'package:appreciation_and_thanks/feature/home/domain/usecase/fetch_badges_usecase.dart';
-import 'package:appreciation_and_thanks/feature/home/domain/usecase/fetch_list_usecase.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewModel extends BaseViewModel {
-  final FetchBadgesUsecase fetchBadgesUsecase;
-  final FetchListUsecase fetchListUsecase;
+  final Usecase fetchBadgesUsecase;
+  final Usecase fetchListUsecase;
 
   HomeViewModel({required this.fetchBadgesUsecase, required this.fetchListUsecase}) {
     _init();

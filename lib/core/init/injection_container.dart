@@ -24,5 +24,6 @@ Future<void> init() async {
   serviceLocator.registerLazySingleton<FetchBadgesUsecase>(() => FetchBadgesUsecase(serviceLocator()));
   serviceLocator.registerLazySingleton<FetchListUsecase>(() => FetchListUsecase(serviceLocator()));
   //*Home Viewmodel
-  serviceLocator.registerLazySingleton<HomeViewModel>(() => HomeViewModel(fetchBadgesUsecase: serviceLocator(), fetchListUsecase: serviceLocator()));
+  serviceLocator.registerLazySingleton<HomeViewModel>(
+      () => HomeViewModel(fetchBadgesUsecase: serviceLocator<FetchBadgesUsecase>(), fetchListUsecase: serviceLocator<FetchListUsecase>()));
 }
