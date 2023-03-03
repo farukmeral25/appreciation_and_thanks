@@ -10,7 +10,7 @@ class BadgeDto {
   late String? title;
   late BadgeIconDto? badgeIcon;
   final int? lookupId;
-  late int? count;
+  int? count;
   int totalScore = 0;
 
   BadgeDto({

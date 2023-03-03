@@ -8,7 +8,7 @@ class PostDto {
   final String message;
   final List<BadgeDto> badges;
   final String created;
-  final String praiseRating;
+  final int praiseRating;
 
   PostDto({
     required this.id,
@@ -28,7 +28,7 @@ class PostDto {
       message: map['Message'],
       badges: List<BadgeDto>.from(map['Badge']?.map((x) => BadgeDto.fromMap(x))),
       created: map['Created'],
-      praiseRating: map['PraiseRating'],
+      praiseRating: int.tryParse(map['PraiseRating']) ?? 0,
     );
   }
 }

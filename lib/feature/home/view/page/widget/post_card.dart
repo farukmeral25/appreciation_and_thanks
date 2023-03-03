@@ -4,6 +4,7 @@ import 'package:appreciation_and_thanks/core/functions/edge_insets_functions.dar
 import 'package:appreciation_and_thanks/core/shared/app_image.dart';
 import 'package:appreciation_and_thanks/core/shared/app_text.dart';
 import 'package:appreciation_and_thanks/feature/home/data/dto/post/post_dto.dart';
+import 'package:appreciation_and_thanks/feature/home/view/page/widget/rating_bar.dart';
 import 'package:flutter/material.dart';
 
 class PostCard extends StatelessWidget {
@@ -66,11 +67,7 @@ class PostCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                     SizedBox(height: 8.h),
-                    Container(
-                      height: 20.h,
-                      width: 100.w,
-                      color: AppColors.blue,
-                    ),
+                    RatingBarWidget(praiseRaiting: post.praiseRating.toDouble()),
                   ],
                 ),
               ),

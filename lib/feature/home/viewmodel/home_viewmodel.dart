@@ -1,5 +1,6 @@
 import 'package:appreciation_and_thanks/core/extensions/list_extension.dart';
 import 'package:appreciation_and_thanks/core/extensions/num_extensions.dart';
+import 'package:appreciation_and_thanks/core/utils/base_viewmodel.dart';
 import 'package:appreciation_and_thanks/core/utils/ui_state.dart';
 import 'package:appreciation_and_thanks/core/utils/usecase.dart';
 import 'package:appreciation_and_thanks/feature/home/data/dto/badge/badge_dto.dart';
@@ -8,7 +9,7 @@ import 'package:appreciation_and_thanks/feature/home/domain/usecase/fetch_badges
 import 'package:appreciation_and_thanks/feature/home/domain/usecase/fetch_list_usecase.dart';
 import 'package:flutter/material.dart';
 
-class HomeViewModel with ChangeNotifier {
+class HomeViewModel extends BaseViewModel {
   final FetchBadgesUsecase fetchBadgesUsecase;
   final FetchListUsecase fetchListUsecase;
 
@@ -30,7 +31,6 @@ class HomeViewModel with ChangeNotifier {
 
   Future<void> fetchBadges() async {
     badgeState = UIState.loading();
-    notifyListeners();
     final fetchBadgesEither = await fetchBadgesUsecase(NoParams());
 
     fetchBadgesEither.fold((failure) {
@@ -38,6 +38,7 @@ class HomeViewModel with ChangeNotifier {
     }, (data) {
       badgeState = UIState.success(data);
     });
+
     notifyListeners();
   }
 
@@ -50,19 +51,25 @@ class HomeViewModel with ChangeNotifier {
     }, (data) {
       postsState = UIState.success(data);
     });
+
     notifyListeners();
   }
 
   void avarageBadges() {
     if (!(postsState.isSuccess && badgeState.isSuccess)) return;
+
     List<PostDto> posts = postsState.data.getValueOrDefault;
     List<BadgeDto> badges = badgeState.data.getValueOrDefault;
+
     int totalBadgeRatingScore = 0;
+
     for (var badge in badges) {
       badge.count = posts.where((post) => post.badges.first.lookupId == badge.id).length;
+
       posts.where((post) => post.badges.first.lookupId == badge.id).forEach((post) {
-        badge.totalScore = badge.totalScore + (int.tryParse(post.praiseRating).getValueOrDefault as int);
+        badge.totalScore = badge.totalScore + (post.praiseRating.getValueOrDefault as int);
       });
+
       totalBadgeRatingScore = totalBadgeRatingScore + badge.totalScore;
     }
 

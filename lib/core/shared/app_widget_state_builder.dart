@@ -2,8 +2,8 @@ import 'package:appreciation_and_thanks/core/shared/app_text.dart';
 import 'package:appreciation_and_thanks/core/utils/ui_state.dart';
 import 'package:flutter/material.dart';
 
-class AppWidgetByStateBuilder<T> extends StatelessWidget {
-  const AppWidgetByStateBuilder({
+class AppWidgetBuilderByState<T> extends StatelessWidget {
+  const AppWidgetBuilderByState({
     Key? key,
     required this.response,
     required this.builder,
