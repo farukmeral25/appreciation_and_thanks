@@ -11,9 +11,7 @@ class HomeViewModel extends BaseViewModel {
   final Usecase fetchBadgesUsecase;
   final Usecase fetchListUsecase;
 
-  HomeViewModel({required this.fetchBadgesUsecase, required this.fetchListUsecase}) {
-    _init();
-  }
+  HomeViewModel({required this.fetchBadgesUsecase, required this.fetchListUsecase});
 
   PageController pageController = PageController();
 
@@ -21,7 +19,7 @@ class HomeViewModel extends BaseViewModel {
   UIState<List<PostDto>> postsState = UIState.idle();
   UIState<String> avarageScoreOfBadge = UIState.idle();
 
-  Future<void> _init() async {
+  Future<void> init() async {
     await fetchBadges();
     await fetchListData();
     avarageBadges();

@@ -1,4 +1,5 @@
 import 'package:appreciation_and_thanks/core/constants/theme/app_colors.dart';
+import 'package:appreciation_and_thanks/core/extensions/date_time_extension.dart';
 import 'package:appreciation_and_thanks/core/extensions/num_extensions.dart';
 import 'package:appreciation_and_thanks/core/functions/edge_insets_functions.dart';
 import 'package:appreciation_and_thanks/core/shared/app_image.dart';
@@ -45,7 +46,7 @@ class PostCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                     AppText.headline4(
-                      "Dün, 13:30’da Gönderdi",
+                      "${post.created.dateToIDayIMonthIYearIHourIMinute}’da Gönderdi",
                       overflow: TextOverflow.ellipsis,
                     ),
                   ],

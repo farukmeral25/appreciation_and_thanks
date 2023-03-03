@@ -3,6 +3,7 @@ import 'package:appreciation_and_thanks/core/constants/theme/app_colors.dart';
 import 'package:appreciation_and_thanks/core/extensions/list_extension.dart';
 import 'package:appreciation_and_thanks/core/extensions/num_extensions.dart';
 import 'package:appreciation_and_thanks/core/functions/edge_insets_functions.dart';
+import 'package:appreciation_and_thanks/core/init/injection_container.dart';
 import 'package:appreciation_and_thanks/core/shared/app_image.dart';
 import 'package:appreciation_and_thanks/core/shared/app_page_slide.dart';
 import 'package:appreciation_and_thanks/core/shared/app_scaffold.dart';
@@ -18,8 +19,19 @@ import 'package:appreciation_and_thanks/feature/home/viewmodel/home_viewmodel.da
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    super.initState();
+    serviceLocator<HomeViewModel>().init();
+  }
 
   @override
   Widget build(BuildContext context) {
