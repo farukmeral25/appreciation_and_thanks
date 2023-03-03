@@ -10,8 +10,12 @@ import 'package:flutter/material.dart';
 class HomeViewModel extends BaseViewModel {
   final Usecase fetchBadgesUsecase;
   final Usecase fetchListUsecase;
+  final bool isTest;
 
-  HomeViewModel({required this.fetchBadgesUsecase, required this.fetchListUsecase});
+  HomeViewModel({required this.fetchBadgesUsecase, required this.fetchListUsecase, this.isTest = false}) {
+    if (isTest) return;
+    _init();
+  }
 
   PageController pageController = PageController();
 
@@ -19,7 +23,7 @@ class HomeViewModel extends BaseViewModel {
   UIState<List<PostDto>> postsState = UIState.idle();
   UIState<String> avarageScoreOfBadge = UIState.idle();
 
-  Future<void> init() async {
+  Future<void> _init() async {
     await fetchBadges();
     await fetchListData();
     avarageBadges();

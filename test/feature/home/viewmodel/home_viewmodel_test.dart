@@ -19,6 +19,7 @@ void main() {
     homeViewModel = HomeViewModel(
       fetchBadgesUsecase: mockFetchBadgesUsecase,
       fetchListUsecase: mockFetchListUsecase,
+      isTest: true,
     );
   });
 
