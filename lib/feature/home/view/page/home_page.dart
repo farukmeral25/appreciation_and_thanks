@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: SingleChildScrollView(
+        controller: ScrollController(),
         child: Column(
           children: [
             Align(
