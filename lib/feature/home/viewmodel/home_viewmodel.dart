@@ -25,7 +25,7 @@ class HomeViewModel extends BaseViewModel {
 
   Future<void> _init() async {
     await fetchBadges();
-    await fetchListData();
+    await fetchPosts();
     avarageBadges();
   }
 
@@ -42,11 +42,11 @@ class HomeViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  Future<void> fetchListData() async {
+  Future<void> fetchPosts() async {
     postsState = UIState.loading();
-    final fetchBadgesEither = await fetchListUsecase(NoParams());
+    final fetchPostsEither = await fetchListUsecase(NoParams());
 
-    fetchBadgesEither.fold((failure) {
+    fetchPostsEither.fold((failure) {
       postsState = UIState.error(failure.message);
     }, (data) {
       postsState = UIState.success(data);

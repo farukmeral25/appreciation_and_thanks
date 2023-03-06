@@ -5,5 +5,5 @@ import 'package:dartz/dartz.dart';
 
 abstract class IHomeService {
   Future<Either<Failure, List<BadgeDto>>> fetchBadges();
-  Future<Either<Failure, List<PostDto>>> fetchListData();
+  Future<Either<Failure, List<PostDto>>> fetchPosts();
 }

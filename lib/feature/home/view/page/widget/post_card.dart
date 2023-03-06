@@ -16,7 +16,7 @@ class PostCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: REdgeInsets.symmetric(horizontal: 16),
-      padding: REdgeInsets.symmetric(horizontal: 16) + REdgeInsets.only(top: 12, bottom: 8),
+      padding: REdgeInsets.symmetric(horizontal: 16, vertical: 8) + REdgeInsets.only(top: 4),
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.circular(5.r),

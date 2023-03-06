@@ -30,7 +30,7 @@ class HomeService implements IHomeService {
   }
 
   @override
-  Future<Either<Failure, List<PostDto>>> fetchListData() async {
+  Future<Either<Failure, List<PostDto>>> fetchPosts() async {
     try {
       final listEither = await _readJsonUsecase(AppEndpoint.list);
       return listEither.fold(

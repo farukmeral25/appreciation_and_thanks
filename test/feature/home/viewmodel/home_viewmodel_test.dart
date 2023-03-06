@@ -63,7 +63,7 @@ void main() {
     "fetch ListData using the HomeViewModel.fetchListData method",
     () async {
       expect(homeViewModel.postsState.status, UIStateStatus.idle);
-      var future = homeViewModel.fetchListData();
+      var future = homeViewModel.fetchPosts();
       expect(homeViewModel.postsState.status, UIStateStatus.loading);
       await future;
       expect(homeViewModel.postsState.status, UIStateStatus.success);
