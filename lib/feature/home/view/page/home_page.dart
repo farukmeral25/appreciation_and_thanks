@@ -166,7 +166,7 @@ class HomePage extends StatelessWidget {
                   mainAxisExtent: 160.w,
                 ),
                 itemBuilder: (context, index) => MiniPraiseCard(
-                  badge: badges[index],
+                  badge: list[index],
                 ),
                 itemCount: list.itemCount,
               );
