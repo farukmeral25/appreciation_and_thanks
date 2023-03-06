@@ -11,14 +11,14 @@ import '../domain/mock_fetch_list_usecase.dart';
 void main() {
   late HomeViewModel homeViewModel;
   late Usecase<List<BadgeDto>, NoParams> mockFetchBadgesUsecase;
-  late Usecase<List<PostDto>, NoParams> mockFetchListUsecase;
+  late Usecase<List<PostDto>, NoParams> mockFetchPostsUsecase;
 
   setUp(() {
     mockFetchBadgesUsecase = MockFetchBadgesUsecase();
-    mockFetchListUsecase = MockFetchListUsecase();
+    mockFetchPostsUsecase = MockFetchPostsUsecase();
     homeViewModel = HomeViewModel(
       fetchBadgesUsecase: mockFetchBadgesUsecase,
-      fetchListUsecase: mockFetchListUsecase,
+      fetchListUsecase: mockFetchPostsUsecase,
       isTest: true,
     );
   });
@@ -60,7 +60,7 @@ void main() {
   );
 
   test(
-    "fetch ListData using the HomeViewModel.fetchListData method",
+    "fetch ListData using the HomeViewModel.fetchPosts method",
     () async {
       expect(homeViewModel.postsState.status, UIStateStatus.idle);
       var future = homeViewModel.fetchPosts();
@@ -71,10 +71,10 @@ void main() {
   );
 
   test(
-    "fetch Posts using the mockFetchListUsecase",
+    "fetch Posts using the mockFetchPostsUsecase",
     () async {
       homeViewModel.postsState = UIState.idle();
-      var future = mockFetchListUsecase.call(NoParams());
+      var future = mockFetchPostsUsecase.call(NoParams());
       homeViewModel.postsState = UIState.loading();
       var either = await future;
       either.fold((failure) {

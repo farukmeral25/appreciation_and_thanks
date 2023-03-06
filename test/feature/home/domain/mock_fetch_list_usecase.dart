@@ -22,7 +22,7 @@ final List<PostDto> postList = [
   ),
 ];
 
-class MockFetchListUsecase extends Mock implements Usecase<List<PostDto>, NoParams> {
+class MockFetchPostsUsecase extends Mock implements Usecase<List<PostDto>, NoParams> {
   @override
   Future<Either<Failure, List<PostDto>>> call(NoParams params) async {
     return Right(postList);
