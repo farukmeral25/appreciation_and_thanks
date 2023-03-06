@@ -27,7 +27,7 @@ class PostDto {
       relatedPerson: List<RelatedPersonDto>.from(map['RelatedPerson']?.map((x) => RelatedPersonDto.fromMap(x))),
       message: map['Message'],
       badges: List<BadgeDto>.from(map['Badge']?.map((x) => BadgeDto.fromMap(x))),
-      created: DateTime.parse(map["Created."]), //DateTime.fromMillisecondsSinceEpoch(map['Created.']),
+      created: DateTime.parse(map["Created."]),
       praiseRating: int.tryParse(map['PraiseRating']) ?? 0,
     );
   }
